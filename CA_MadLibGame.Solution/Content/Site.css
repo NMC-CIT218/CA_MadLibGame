@@ -1,24 +1,75 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+﻿/*
+    Basic web page template with header, one articles including a photo, and a footer
 */
-.dl-horizontal dt {
-    white-space: normal;
+
+/* Force older browsers to display HTML5 elements correctly */
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* Reset padding and margins for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common elements */
+
+
+
+html {
+    background-color: #00ffff;
+    padding: 10px;
+}
+
+body {
+    width: 880px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+header {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #00ffff;
+    text-align: center;
+}
+
+#directions {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#wordForm {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    background-color: #00ffff;
+    overflow: hidden;
+}
+
+    #wordForm input {
+        width: 200px;
+        float: right;
+    }
+
+    #wordForm p {
+        margin: 3px;
+        clear: both;
+        float: right;
+    }
+
+.formButton {
+    clear: both;
+    margin: 3px;
+    padding: 5px;
+}
+
+footer {
+    clear: both;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #00ffff;
+    text-align: center;
 }
