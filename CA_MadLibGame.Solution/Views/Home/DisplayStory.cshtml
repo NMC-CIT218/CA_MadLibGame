@@ -1,4 +1,30 @@
-﻿
-<h2>Display Story</h2>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bonzo's Mad Lib Game</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 
-<p>@ViewBag.StoryText</p>
+    <header>
+        <h1>Bonzo's Mad Lib Game</h1>
+    </header>
+
+    <section id="story">
+        <h2>Your Story</h2>
+        <p>@ViewBag.StoryText</p>
+    </section>
+
+    <section>
+        <form action="~/Home/Index" method="get">
+            <input type="submit" name="enterWords" value="Try Again" class="formButton" />
+        </form>
+    </section>
+
+    <footer>
+        <h4>Laughing Leaf Productions, 2017</h4>
+    </footer>
+
+</body>
+</html>

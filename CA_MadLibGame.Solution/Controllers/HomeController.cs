@@ -19,10 +19,11 @@ namespace CA_MadLibGame.Controllers
             StringBuilder storyText = new StringBuilder();
 
             storyText.Clear();
-            storyText.Append($"You are my {1} love.You have me completely in your {2}.");
-
-
-            //I know and feel that if I am to 3 anything fine and noble in the future I shall do so only by 4 at the 5 of your heart.I would like to go through life 6 by 6 with you, 7 you more and more until we 8 to be 9 being(s) together until the hour should come for us to 10.
+            storyText.Append($"You are my {Request.QueryString["adjective"]} love. You have me completely in your {Request.QueryString["noun"]}. ");
+            storyText.Append($"I know and feel that if I am to {Request.QueryString["verb1"]} anything fine and noble ");
+            storyText.Append($"in the future I shall do so only by {Request.QueryString["verbIng1"]} at the {Request.QueryString["nounPlural"]} of your heart. ");
+            storyText.Append($"I would like to go through life {Request.QueryString["bodyPart"]} by {Request.QueryString["bodyPart"]} with you, {Request.QueryString["VerbIng2"]} you more and more until ");
+            storyText.Append($"we {Request.QueryString["verbEd"]} to be {Request.QueryString["number"]} being(s) together until the hour should come for us to {Request.QueryString["verb2"]}.");
 
             ViewBag.StoryText = storyText.ToString();
 
