@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bonzo's Mad Lib Game</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <header>
+        <h1>Bonzo's Mad Lib Game</h1>
+    </header>
+
+    <section id="directions">
+        <p>To play the game, enter words or short phrases in each of the boxes below.</p>
+        <p>Then, click the "See My Story" button at the bottom to view your Mad Lib.</p>
+    </section>
+
+    <section id="wordForm">
+        <form action="~/Home/DisplayStory" method="get">
+            <p>Adjective:&nbsp;<input type="text" name="adjective" value="" /></p>
+            <p>Noun:&nbsp;<input type="text" name="noun" value="" /></p>
+            <p>Verb:&nbsp;<input type="text" name="verb1" value="" /></p>
+            <p>Verb Ending in "ing":&nbsp;<input type="text" name="verbIng1" value="" /></p>
+            <p>Plural Noun:&nbsp;<input type="text" name="nounPlural" value="" /></p>
+            <p>Body Part:&nbsp;<input type="text" name="bodyPart" value="" /></p>
+            <p>Verb Ending in "ing":&nbsp;<input type="text" name="verbIng2" value="" /></p>
+            <p>Verb Ending in "ed":&nbsp;<input type="text" name="verbEd" value="" /></p>
+            <p>Number":&nbsp;<input type="text" name="number" value="" /></p>
+            <p>Verb:&nbsp;<input type="text" name="verb2" value="" /></p>
+            <input type="reset" name="reset" value="Clear" class="formButton" />
+            <input type="submit" name="viewStory" value="See My Story" class="formButton"/>
+        </form>
+    </section>
+
+    <footer>
+        <h4>Laughing Leaf Productions, 2017</h4>
+    </footer>
+
+</body>
+</html>
